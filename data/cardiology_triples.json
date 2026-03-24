@@ -1,0 +1,104 @@
+{
+  "klm_id": "patient_klm_cardiology",
+  "patient_id": "PT-8839-CR",
+  "triples": [
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_risk_factor",
+      "tail": "Hypertension",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_bmi",
+      "tail": "29.1",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_inflammation_marker",
+      "tail": "hs-CRP 5.2 mg/L",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "ACE rs4340 D/D",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "ACE rs4340 D/D",
+      "relation": "associated_with",
+      "tail": "Left ventricular hypertrophy",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "NOS3 rs1799983 T/T",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "NOS3 rs1799983 T/T",
+      "relation": "causes",
+      "tail": "Endothelial dysfunction",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "Endothelial dysfunction",
+      "relation": "leads_to",
+      "tail": "Arterial stiffness",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "clinical_knowledge"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_heart_rate",
+      "tail": "88 bpm",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "treated_with",
+      "tail": "Amlodipine 5mg",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "Hypertension",
+      "relation": "increases_risk_of",
+      "tail": "Cardiovascular disease",
+      "confidence": 0.95,
+      "evidence_level": "I",
+      "source": "clinical_knowledge"
+    }
+  ]
+}

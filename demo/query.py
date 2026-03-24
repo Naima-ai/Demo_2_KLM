@@ -9,9 +9,10 @@ from pathlib import Path
 BASE = Path(__file__).parent
 
 KLM_PATHS = {
-    "patient_klm":   BASE / "patient_triples.json",
-    "pathology_klm": BASE / "pathology_triples.json",
-    "research_klm":  BASE / "research_triples.json",
+    "patient_klm":    BASE / "patient_triples.json",
+    "cardiology_klm":    BASE / "cardiology_triples.json",
+    "nephrology_klm":    BASE / "nephrology_triples.json",
+    "hypertension_klm":  BASE / "hypertension_triples.json"
 }
 
 sys.path.insert(0, str(BASE))

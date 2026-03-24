@@ -14,8 +14,10 @@ R="\033[0m"; B="\033[1m"; DIM="\033[2m"
 RED="\033[91m"; GRN="\033[92m"; YLW="\033[93m"
 BLU="\033[94m"; MAG="\033[95m"; CYN="\033[96m"; WHT="\033[97m"
 
-KLM_CLR = {"patient_klm": CYN, "pathology_klm": MAG, "research_klm": YLW} # for different klms
-KLM_LBL = {"patient_klm": "PATIENT  ", "pathology_klm": "PATHOLOGY", "research_klm": "RESEARCH "}
+KLM_CLR = {"patient_klm": CYN, "cardiology_klm": MAG, "nephrology_klm": YLW, "hypertension_klm": BLU} # for different klms
+KLM_LBL = {"patient_klm": "PATIENT  ", "cardiology_klm": "CARDIO   ",
+    "nephrology_klm": "NEPHRO   ",
+    "hypertension_klm": "HTN      "}
 EV_CLR  = {"I": GRN, "II": GRN, "III": YLW, "IV": YLW, "V": RED} # evidence level
 
 BASE = Path(__file__).parent
@@ -200,8 +202,9 @@ def main():
     print(f"\r  {GRN}✔ Ready{R}  ({elapsed:.1f}s)  "
           f"{DIM}—{R}  "
           f"{CYN}Patient:{counts.get('patient_klm',0)}{R}  "
-          f"{MAG}Pathology:{counts.get('pathology_klm',0)}{R}  "
-          f"{YLW}Research:{counts.get('research_klm',0)}{R}  "
+          f"{MAG}Cardio:{counts.get('cardiology_klm',0)}{R}  "
+          f"{YLW}Nephro:{counts.get('nephrology_klm',0)}{R}  "
+          f"{BLU}HTN:{counts.get('hypertension_klm',0)}{R}  "
           f"triples")
 
     # SLM status

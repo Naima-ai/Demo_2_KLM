@@ -186,10 +186,11 @@ def main():
     print(f"  {DIM}Loading KLMs...{R}", end="", flush=True)
     t0 = time.time()
     assembler = MetaModelAssembler({
-        "patient_klm":   BASE / "patient_triples.json",
-        "pathology_klm": BASE / "pathology_triples.json",
-        "research_klm":  BASE / "research_triples.json",
-    })
+    "patient_klm":    BASE / "patient_triples.json",
+    "cardiology_klm":    BASE / "cardiology_triples.json",
+    "nephrology_klm":    BASE / "nephrology_triples.json",
+    "hypertension_klm":  BASE / "hypertension_triples.json",
+})
 
     # Auto-detect SLM
     slm = get_best_adapter(verbose=False)

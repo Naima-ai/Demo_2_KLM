@@ -1,0 +1,102 @@
+{
+  "klm_id": "patient_klm_hypertension",
+  "patient_id": "PT-8839-CR",
+  "triples": [
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_diagnosis",
+      "tail": "Hypertension",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-02-14"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_bp",
+      "tail": "158/98",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "ACE rs4340 D/D",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "ACE rs4340 D/D",
+      "relation": "increases_risk_of",
+      "tail": "Hypertension",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "AGT rs699 T/T",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "AGT rs699 T/T",
+      "relation": "causes",
+      "tail": "Salt-sensitive hypertension",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "NOS3 rs1799983 T/T",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "NOS3 rs1799983 T/T",
+      "relation": "causes",
+      "tail": "Endothelial dysfunction",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "treated_with",
+      "tail": "Lisinopril 20mg",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR"
+    },
+    {
+      "head": "PT-8839-CR",
+      "relation": "treated_with",
+      "tail": "Amlodipine 5mg",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR"
+    },
+
+    {
+      "head": "Hypertension",
+      "relation": "causes",
+      "tail": "Chronic Kidney Disease",
+      "confidence": 0.95,
+      "evidence_level": "I",
+      "source": "clinical_knowledge"
+    }
+  ]
+}

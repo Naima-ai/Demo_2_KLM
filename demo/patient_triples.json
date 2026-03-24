@@ -1,0 +1,241 @@
+[
+ 
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_age",
+    "tail": "48",
+    "confidence": 1.0,
+    "evidence_level": "I",
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_gender",
+    "tail": "Male",
+    "confidence": 1.0,
+    "evidence_level": "I",
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+
+  // =========================
+  // DNA VARIANTS
+  // =========================
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_variant",
+    "tail": "ACE rs4340 D/D",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA",
+    "timestamp": "2026-03-24"
+  },
+  {
+    "head": "ACE rs4340 D/D",
+    "relation": "associated_with",
+    "tail": "Essential Hypertension, LV hypertrophy, CKD progression",
+    "confidence": 0.9,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_variant",
+    "tail": "AGT rs699 T/T",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA",
+    "timestamp": "2026-03-24"
+  },
+  {
+    "head": "AGT rs699 T/T",
+    "relation": "associated_with",
+    "tail": "Salt-sensitive hypertension, renal vascular resistance",
+    "confidence": 0.9,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_variant",
+    "tail": "APOL1 rs73885319 G/G",
+    "confidence": 0.98,
+    "evidence_level": "I",
+    "source": "DNA",
+    "timestamp": "2026-03-24"
+  },
+  {
+    "head": "APOL1 rs73885319 G/G",
+    "relation": "associated_with",
+    "tail": "CKD, FSGS, ESRD",
+    "confidence": 0.95,
+    "evidence_level": "I",
+    "source": "DNA"
+  },
+
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_variant",
+    "tail": "NOS3 rs1799983 T/T",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA",
+    "timestamp": "2026-03-24"
+  },
+  {
+    "head": "NOS3 rs1799983 T/T",
+    "relation": "associated_with",
+    "tail": "Endothelial dysfunction, hypertension",
+    "confidence": 0.9,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_variant",
+    "tail": "UMOD rs4293393 A/A",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA",
+    "timestamp": "2026-03-24"
+  },
+  {
+    "head": "UMOD rs4293393 A/A",
+    "relation": "associated_with",
+    "tail": "CKD progression, eGFR decline",
+    "confidence": 0.9,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+
+  // =========================
+  // POLYGENIC RISK
+  // =========================
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_polygenic_risk",
+    "tail": "Hypertension PRS: 92.4 (95th percentile)",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_polygenic_risk",
+    "tail": "CKD progression PRS: 88.1 (89th percentile)",
+    "confidence": 0.95,
+    "evidence_level": "II",
+    "source": "DNA"
+  },
+
+  // =========================
+  // EHR FEB 2025
+  // =========================
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_diagnosis",
+    "tail": "Essential hypertension",
+    "confidence": 0.99,
+    "evidence_level": "I",
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_bp",
+    "tail": "146/92",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_egfr",
+    "tail": "82",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_uacr",
+    "tail": "45",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "takes_medication",
+    "tail": "Lisinopril 10mg",
+    "confidence": 0.99,
+    "source": "EHR",
+    "timestamp": "2025-02-14"
+  },
+
+  // =========================
+  // EHR OCT 2025 (PROGRESSION)
+  // =========================
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_diagnosis",
+    "tail": "Hypertension (uncontrolled)",
+    "confidence": 0.99,
+    "evidence_level": "I",
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_diagnosis",
+    "tail": "Chronic Kidney Disease Stage 2",
+    "confidence": 0.99,
+    "evidence_level": "I",
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_bp",
+    "tail": "158/98",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_egfr",
+    "tail": "71",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "has_uacr",
+    "tail": "135",
+    "confidence": 0.95,
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "takes_medication",
+    "tail": "Lisinopril 20mg",
+    "confidence": 0.99,
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  },
+  {
+    "head": "PT-8839-CR",
+    "relation": "takes_medication",
+    "tail": "Amlodipine 5mg",
+    "confidence": 0.99,
+    "source": "EHR",
+    "timestamp": "2025-10-10"
+  }
+]

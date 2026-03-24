@@ -1,0 +1,86 @@
+{
+  "klm_id": "patient_klm_nephrology",
+  "patient_id": "PT-8839-CR",
+  "triples": [
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_diagnosis",
+      "tail": "Chronic Kidney Disease Stage 2",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_egfr",
+      "tail": "71",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_uacr",
+      "tail": "135",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR",
+      "timestamp": "2025-10-10"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "APOL1 rs73885319 G/G",
+      "confidence": 0.98,
+      "evidence_level": "I",
+      "source": "DNA"
+    },
+    {
+      "head": "APOL1 rs73885319 G/G",
+      "relation": "increases_risk_of",
+      "tail": "Chronic Kidney Disease",
+      "confidence": 0.95,
+      "evidence_level": "I",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "has_variant",
+      "tail": "UMOD rs4293393 A/A",
+      "confidence": 0.95,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+    {
+      "head": "UMOD rs4293393 A/A",
+      "relation": "associated_with",
+      "tail": "eGFR decline",
+      "confidence": 0.9,
+      "evidence_level": "II",
+      "source": "DNA"
+    },
+
+    {
+      "head": "PT-8839-CR",
+      "relation": "treated_with",
+      "tail": "Lisinopril",
+      "confidence": 1.0,
+      "evidence_level": "I",
+      "source": "EHR"
+    },
+
+    {
+      "head": "Chronic Kidney Disease",
+      "relation": "progresses_with",
+      "tail": "Hypertension",
+      "confidence": 0.95,
+      "evidence_level": "I",
+      "source": "clinical_knowledge"
+    }
+  ]
+}
